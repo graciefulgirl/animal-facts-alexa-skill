@@ -17,11 +17,11 @@ const Alexa = require('alexa-sdk');
 
 //Replace with your app ID (OPTIONAL).  You can find this value at the top of your skill's page on http://developer.amazon.com.
 //Make sure to enclose your value in quotes, like this: const APP_ID = 'amzn1.ask.skill.bb4045e6-b3e8-4133-b650-72923c5980f1';
-const APP_ID = undefined;
+const APP_ID = "amzn1.ask.skill.740d3d11-c1d1-4ff2-a3eb-53af680b466a";
 
-const SKILL_NAME = 'Space Facts';
+const SKILL_NAME = 'Animal Facts';
 const GET_FACT_MESSAGE = "Here's your fact: ";
-const HELP_MESSAGE = 'You can say tell me a space fact, or, you can say exit... What can I help you with?';
+const HELP_MESSAGE = 'You can say tell me an animal fact, or, you can say exit... What can I help you with?';
 const HELP_REPROMPT = 'What can I help you with?';
 const STOP_MESSAGE = 'Goodbye!';
 
@@ -29,19 +29,40 @@ const STOP_MESSAGE = 'Goodbye!';
 //TODO: Replace this data with your own.  You can find translations of this data at http://github.com/alexa/skill-sample-node-js-fact/lambda/data
 //=========================================================================================================================================
 const data = [
-    'A year on Mercury is just 88 days long.',
-    'Despite being farther from the Sun, Venus experiences higher temperatures than Mercury.',
-    'Venus rotates counter-clockwise, possibly because of a collision in the past with an asteroid.',
-    'On Mars, the Sun appears about half the size as it does on Earth.',
-    'Earth is the only planet not named after a god.',
-    'Jupiter has the shortest day of all the planets.',
-    'The Milky Way galaxy will collide with the Andromeda Galaxy in about 5 billion years.',
-    'The Sun contains 99.86% of the mass in the Solar System.',
-    'The Sun is an almost perfect sphere.',
-    'A total solar eclipse can happen once every 1 to 2 years. This makes them a rare event.',
-    'Saturn radiates two and a half times more energy into space than it receives from the sun.',
-    'The temperature inside the Sun can reach 15 million degrees Celsius.',
-    'The Moon is moving approximately 3.8 cm away from our planet every year.'
+    'Koalas usually get all the water they need from eucalyptus leaves.',
+    'Koalas can be ferocious when resisting capture. They growl, fight, and bite.',
+    'Koalas often return to trees they consider their territory.',
+    'When temperature rises, koalas press their bodies close to tree trunks, which cools them off.',
+    'Koala twins are very rare.',
+    'In the wild, koalas live about 10 to 15 years.',
+    'A tiger\'s roar can be heard as far as two miles away.',
+    'Wild tigers are in drastic decline, with perhaps 3,000 left.',
+    'The toro toucan\'s bill is a third of the bird\'s length.',
+    'Toucan bills are strong but light.',
+    'Toucans are found in the wild only in the Americas.',
+    'A toucan bill exterior is made of keratin; the interior, bone.',
+    'Wild turkeys can run 25 miles an hour in short bursts.',
+    'Wild turkeys can reach flyign speeds of 55 miles an hour.',
+    'An arctic fox burrow complex can spread over 500 square feet and have 100 entrances.',
+    'A giraffe\'s heart weighs about 25 pounds - it has to be that big to pump blood all the way to its brain.',
+    'Giraffes arch their necks to force air through their windpipes, creating very low frequency sounds.',
+    'A long sticky tongue lets aardvarks slurp up termites from thier mounds.',
+    'The pupils of the oriental fire-bellied toad are triangular.',
+    'California sea lions can hunt continuously for up to 30 hours.',
+    'The bobcat is the most abundant wildcat in the U.S.',
+    'Bobcats roam from Canada to Mexico.',
+    'Baby elephants are dependent on their mothers\' milk for the first 2 years of life.',
+    'Elephants are the largest land animals.',
+    'Emperor penguins are the largest of all penguins.',
+    'Whale sharks are the biggest fish in the sea.',
+    'A whale shark can be as long as a school bus and weigh as much as 50,000 pounds.',
+    'Whale sharks are one of only three known shark species that filter feed, as baleen whales do.',
+    'The tiger shark is the world\'s most dangerous shark, after the great white.',
+    'Tiger sharks will eat anything, including other sharks, license plates, and tires.',
+    'Tiger sharks migrate to Hawaii each June to prey on albatross.',
+    'To avoid stepping on a stringray, shuffle your feet. The vibrations alert the rays.',
+    'Electric eels aren\'t eels. Their scientific classification is closer to carp and catfish.',
+    'Electric eels are air breathers and must come to the water\'s surface frequently.'
 ];
 
 //=========================================================================================================================================
